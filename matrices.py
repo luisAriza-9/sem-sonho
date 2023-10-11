@@ -1,27 +1,28 @@
 def crearMatrices(fil,col):
     m = []
-for  i in  range fil:
 
-     fila =[0] * col
-    m. append(fila)
-    
-return m
+    for i in range(fil):
+        fila = [0] * col
+        m.append(fila)
+    return m
 
-def printMatriz(mat):
-    
+def imprimirMatrices(matriz):
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            print(matriz[i][j] ,end=" ")
+        print("")
 
-    
-
-
-
-
-
-def printMatriz(mat):
-    pass
-
-matriz = crearMatrices(4,5)
-printMatriz(matriz)
+def imprimirMatrices(matriz):
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            print(matriz[i][j] ,end=" ")
+        print("")
 
 
-ventas_sweetco.pyventas_sweetco.py
-ventas_sweetco.pyventas_sweetco.py
+
+
+
+
+
+matriz =    crearMatrices(4,5)
+imprimirMatrices(matriz)
