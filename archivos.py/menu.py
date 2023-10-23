@@ -78,7 +78,11 @@ print("Por favor, ingrese 'S' para jugar de nuevo o 'N' para salir.")
 elif empate(matriz):
 print("💎💎 Empate")
 print("💎💎 Fin del juego 💎💎")
-# Dentro del bucle de partida empatada
+                    print(f"El jugador {jugadores[i]} 💎💎es el  ganador💎💎")
+                    print(f"El jugador {jugadores[i]} 💎💎es el  ganador💎💎")
+                    print(f"El jugador {jugadores[i]} 💎💎es el  ganador💎💎")
+                    print(f"El jugador {jugadores[i]} 💎💎es el  ganador💎💎")
+# Dentro del bucle de partida empatada🥇
 while True:
 jugar_de_nuevo = input("¿Desean jugar de nuevo con los mismos jugadores? (S/N): ").strip().upper()
 if jugar_de_nuevo == "S":
@@ -119,3 +123,8 @@ time.sleep(4)
 elif opcion == "3": # salir del programa
 print("Gracias por usar el programa")
 break
+
+
+jugadores = [[input("Jugador 1: "),"X"], [input("Jugador 2: "),"O"]]
+
+jugador =   'X'💎💎🌕🌕|
