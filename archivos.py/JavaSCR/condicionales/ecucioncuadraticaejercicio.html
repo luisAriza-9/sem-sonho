@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiz</title>
+</head>
+<body>
+   <script>
+
+
+    let a = 1;
+    let b = 2;
+    let c = -3;
+    
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant < 0) {
+      console.log("No real roots");
+    } else if (discriminant === 0) {
+      let root = -b / (2 * a);
+      console.log("The root is " + root);
+    } else {
+      let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+      let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+      console.log("The roots are " + root1 + " and " + root2);
+    }
+    
+    
+
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIVINA EL MNUMERO </title>
+</head>
+<body>
+   <script>
+   
+    let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+let intentos = 0;
+let adivinanza = prompt("Adivina el número entre 1 y 100");
+
+while (adivinanza != numeroAleatorio) {
+  if (adivinanza > numeroAleatorio) {
+    adivinanza = prompt("El número es menor. Adivina de nuevo");
+  } else {
+    adivinanza = prompt("El número es mayor. Adivina de nuevo");
+  }
+  intentos++;
+}
+
+alert("¡Felicidades! Adivinaste el número en " + intentos + " intentos.");
+</script>
+
+
+</body>
+</html>
