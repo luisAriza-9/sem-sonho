@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLETAS</title>
+
+
+    <style>
+        body {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        let nombreGanadora = "";
+        let marcaGanadora = 0;
+        let record = 15.50;
+        let premio = 500;
+
+        for (let i = 0; i < 9; i++) {
+            let nombre = prompt("Ingrese el nombre del atleta finalista: ");
+            let marca = parseFloat(prompt("Ingrese la marca del salto en metros: "));
+            if (marca > marcaGanadora) {
+                nombreGanadora = nombre;
+                marcaGanadora = marca;
+            }
+        }
+
+        if (marcaGanadora > record) {
+            alert(nombreGanadora + " ganó la medalla de oro y rompió el récord con una marca de " + marcaGanadora + " metros. Recibirá un premio de " + premio + " euros.");
+        } else {
+            alert(nombreGanadora + " ganó la medalla de oro con una marca de " + marcaGanadora + " metros. No se rompió el récord.");
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
