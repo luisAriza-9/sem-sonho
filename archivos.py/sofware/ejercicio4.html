@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+
+<body>
+    <script>
+
+
+        let hora = Number(prompt('Digite la hora'));
+
+
+        const periodo = (hora >= 0 && hora <= 24) ? (hora <= 12 ? 'AM' : 'PM') : 'Hora inválida';
+        const resultado = `Son las ${hora} ${periodo}`;
+
+        console.log(resultado);
+        alert(resultado);
+    </script>
+</body>
+
+</html>
