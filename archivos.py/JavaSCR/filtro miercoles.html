@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prestamo con interes </title>
+</head>
+<body>
+    <style>
+        table {
+            width: 30%;
+        }
+
+        .veces {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banco ACNE</h1>
+    <hr>
+    <h3>Texto:</h3>
+    <p id="texto"></p>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Monton del credidto</th>
+                <th>tasa de interes (anual)</th>
+               
+                <th>Numero de pagos (mensuales)</th>
+                 <th>Valor total</th>
+                 <th>valor mensual</th>
+                </tr>
+        </thead>
+        <tbody id="tdatos"></tbody>
+    </table>
+
+    <br><br>
+    <button onclick="Monton()">Monton</button>
+    <button onclick="alert('Interes (anual%12)')">Interes </button>
+    <button onclick="alert(Numerodepagos(Mensuales/12))">Numerodepagos</button>
+    
+
+    <script>
+
+        
+
+        const dicMontoncredidto = new Map ()
+
+        function interes(anual) {
+
+            let Montodelcredito = Number(12%("Monto del credito? "))
+            let Interes = Number(prompt("Valor del prestamo? "))
+            let cantdemeses = 0
+            let numerodepagos = 0
+
+            Montodelcredito.set(Interes, valorApagar,cantdemeses,numerodepagos)
+            console.log(Montodelcredito)
+
+            Montodelcredito.forEach((v , k ) => {
+                
+                cantdemeses += Number(v)
+                
+            })
+            console.log("Cantdemeses: " , numerodepagos)
+
+            cantFactAgregadas += 1
+
+            
+            
+        }
+
+        function valormensual() {
+            let numeroFactura = Number(prompt("Montodelcredito?"))
+            let valorPagado = 0
+            let cantidadPendiente = 0
+
+
+            dicFacturas.forEach((v , k ) => {
+                
+                cantidadPendiente += Number(v)
+            
+            })
+
+            
+
+            dicFacturas.forEach((v , k ) => {
+            //console.log(`El precio de la fruta es ${k} es: ${v}`)
+
+                if (k === numeroFactura){
+                    console.log("-" .repeat(30))
+                    // console.log(k)
+                    // console.log(numeroFactura)
+                    dicFacturas.delete(k)
+                    valorPagado = v
+                    //console.log(dicFacturas)
+                    console.log("Pagado" , valorPagado)
+
+                }
+
+            })
+
+            
+            console.log("Cantidad pendiente: " , cantidadPendiente - valorPagado)
+
+            
+
+            
+            
+        }
+        
+
+        
+
+    </script>
+
+</head>
+<body>
+
+    
+</body>
+</html>
+
+
+
+    
+</body>
+</html>
