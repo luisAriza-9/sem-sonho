@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asincronico</title>
+</head>
+<body>
+    <script>
+const generateNumber = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(1 + Math.floor(Math.random() * 6));
+    }, 1000); // Simulamos una operación asincrónica con un retardo de 1 segundo
+  });
+};
+
+
+
+const ParAasync = async (iterations) => {
+ const numbers = [];
+
+
+ for (let i = 0; i < iterations; i++) {
+   const number = await generateNumber();
+   numbers.push(number);
+
+
+   if (number === 6) {
+     return {
+       error: true,
+       iter: i + 1,
+       message: "Se ha sacado un 6"
+     };
+   }
+ }
+
+
+ return {
+   error: false,
+   value: numbers
+ };
+};
+
+
+// Llamada a la función asíncrona usando await
+(async () => {
+ const result = await ParAasync(10);
+ console.log(result);
+})();
+
+
+   </script>
+</body>
+</html>
+
