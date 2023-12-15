@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Pokemones</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        button {
+            margin: 0 auto;
+            margin-left: 47%;
+           
+        }
+
+        thead, tbody {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main id="principal">
+        <table class="tabla">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+
+            <tbody class="tabla_body"></tbody>
+        </table>
+    </main>
+    <button onclick="siguiente()">Siguiente</button>
+    
+    <script>
+        const principal = document.getElementById("principal");
+        const cuerpoTabla = principal.querySelector(".tabla_body");
+
+        
+        //prueba
+        // UTILIZANDO ASYNC AWAIT
+        async function pokeApi(nompoke) {
+            const url = `https://pokeapi.co/api/v2/pokemon/${nompoke}`;
+
+            const respuesta = await fetch(url);
+
+            //si la respuesta no fue exitosa
+            if (!respuesta.ok)
+                throw new Error("Error. Pokemon no existe")
+
+            const json = await respuesta.json();
+            // retornar el link de la imagen del pokemon
+            return [json.sprites.front_default, json.name, json.id];
+        }
+        pokeApi("1")
+            .then(nombre => console.log(nombre))
+            .catch(error => console.error(error.message));
+
+        //funcion que se ejecuta inmediatamente
+         
+        async function siguiente() {
+            const poke1 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
+            const poke2 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
+            
+            try {
+                let listaPokemon = await pokeApi(`${poke1}`);
+                let listaPokemon2 = await pokeApi(`${poke2}`);
+                cuerpoTabla.innerHTML = `
+            <tr class="Pokemons">
+                <td><img src="${listaPokemon[0]}"</td>
+                <td><img src="${listaPokemon2[0]}"</td>
+            <tr class="Pokemons">
+                <td>${listaPokemon[2]}</td>
+                <td>${listaPokemon2[2]}</td>
+            <tr class="Pokemons">    
+                <td>${listaPokemon[1]}</td>
+                <td>${listaPokemon2[1]}</td>
+            </tr>`
+
+            } catch (error) {
+                console.error(error.message);
+            
+            }
+            
+        }
+        siguiente()
+    </script>
+</body>
+</html>
