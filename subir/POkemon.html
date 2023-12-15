@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 Pokemones</title>
+    <title>BATALLA POKEMON</title>
     <style>
-        * {
+       
+
+       * {
             padding: 0;
             margin: 0 auto;
             box-sizing: border-box;
         }
         button {
             margin: 0 auto;
-            margin-left: 47%;
+            margin-left: 46%;
            
         }
 
@@ -23,7 +25,7 @@
     </style>
 </head>
 <body>
-
+    <h1> EL CLUB DE LA PELEA POKEMON</h1>
     <main id="principal">
         <table class="tabla">
             <thead>
@@ -34,9 +36,15 @@
             <tbody class="tabla_body"></tbody>
         </table>
     </main>
-    <button onclick="siguiente()">Siguiente</button>
-    
-    <script>
+   
+           <button onclick="Figth()">Figth</button>
+           <button onclick="siguiente()">Siguiente</button>
+  
+  
+  
+   
+   
+   <script>
         const principal = document.getElementById("principal");
         const cuerpoTabla = principal.querySelector(".tabla_body");
 
@@ -60,15 +68,15 @@
             .then(nombre => console.log(nombre))
             .catch(error => console.error(error.message));
 
-        //funcion que se ejecuta inmediatamente
+        //funcion que se ejecuta inmediatamente 
          
         async function siguiente() {
             const poke1 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
             const poke2 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
             
             try {
-                let listaPokemon = await pokeApi(`${poke1}`);
-                let listaPokemon2 = await pokeApi(`${poke2}`);
+                let [Hp, Attack, Defense, Speed] = await pokeApi(`${poke1}`);
+                let  = await pokeApi(`${poke2}`);
                 cuerpoTabla.innerHTML = `
             <tr class="Pokemons">
                 <td><img src="${listaPokemon[0]}"</td>
@@ -87,7 +95,53 @@
             }
             
         }
+     
         siguiente()
+    
+    
+     //funcion que se ejecuta inmediatamente ATAQUES
+  
+ async function siguiente() {
+     const poke1 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
+     const poke2 = Math.floor(Math.random() * (1000 - 0 + 1) + 0)
+     
+     try {
+         let listaPokemon = await pokeApi(`${poke1}`);
+         let listaPokemon2 = await pokeApi(`${poke2}`);
+         cuerpoTabla.innerHTML = `
+     <tr class="Pokemons">
+         <td><img src="${listaPokemon[0]}"</td>
+         <td><img src="${listaPokemon2[0]}"</td>
+     <tr class="Pokemons">
+         <td>${listaPokemon[2]}</td>
+         <td>${listaPokemon2[2]}</td>
+     <tr class="Pokemons">    
+         <td>${listaPokemon[1]}</td>
+         <td>${listaPokemon2[1]}</td>
+     </tr>`
+     } catch (error) {
+         console.error(error.message);siguiente()
+   
+   
+   Im: sprites.other. official-art
+     
+     }
+     
+ }
+ siguiente()
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     </script>
 </body>
 </html>
