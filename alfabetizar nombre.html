@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenador de Nombres</title>
+</head>
+<body>
+    <h1>Ordenador de Nombres</h1>
+    <textarea id="nombres" rows="5" cols="30" placeholder="Ingresa nombres aquí"></textarea>
+    <button onclick="ordenarNombres()">Ordenar</button>
+    <div id="nombresOrdenados"></div>
+
+    <script>
+        function ordenarNombres() {
+            const nombresInput = document.getElementById('nombres');
+            const nombres = nombresInput.value.split('\n').filter(nombre => nombre.trim() !== '');
+
+            // Ordenar los nombres alfabéticamente
+            nombres.sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
+            // Mostrar los nombres ordenados
+            const nombresOrdenadosDiv = document.getElementById('nombresOrdenados');
+            nombresOrdenadosDiv.innerHTML = '';
+            nombres.forEach(nombre => {
+                const p = document.createElement('p');
+                p.textContent = nombre;
+                nombresOrdenadosDiv.appendChild(p);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
