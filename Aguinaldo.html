@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tarjetas Flashcard</title>
+    <style>
+        /*  CSS */
+        #flashcards {
+            max-width: 400px;
+            margin: auto;
+        }
+        .flashcard {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="flashcards"></div>
+
+<button onclick="crearTarjeta()">Añadir</button>
+<button onclick="guardarTarjeta()">Eliminar</button>
+
+<script>
+    const flashcards = document.getElementById('flashcards');
+
+    function crearTarjeta() {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'flashcard';
+        tarjeta.contentEditable = true; // Permite editar el contenido
+        flashcards.appendChild(tarjeta);
+    }
+
+    function guardarTarjeta() {
+        localStorage.setItem('tarjetas', flashcards.innerHTML);
+    }
+
+    // Cargar las tarjetas guardadas al recargar la página
+    window.onload = () => {
+      const tarjetasGuardadas = localStorage.getItem('tarjetas');
+      if (tarjetasGuardadas) {
+          flashcards.innerHTML = tarjetasGuardadas;
+      }
+   };
+
+
+   
+</script>
+
+</body>
+</html>

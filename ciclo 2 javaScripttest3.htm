@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test3</title>
+</head>
+<body>
+    
+    <form id="cajaForm">
+        <label for="nombreCliente">crear flashcard:</label>
+        <input type="text" id="nombreCliente" value="Persona"><br>
+        <br>
+        <br>
+        <br>
+        <label for="PREGUNTA">PREGUNTA :</label>
+        <label for="Respuesta">Respuesta:</label>
+        <select id="materialCaja">
+            <option value="Java script">Java script</option>
+            <option value="Python">Python</option>
+            <!-- Agrega más opciones si es necesario -->
+        </select><br>
+        <br>
+        <br>
+        <br>
+        <label>Seleccione las ganas que tienes por dentrar a campus :</label><br>
+        <input type="radio" name="ganas" value="diminutas"> Diminutas
+        <input type="radio" name="ganas" value="medianas" checked> Medianas
+        <input type="radio" name="ganas" value="grandes"> Grandes<br>
+        <br>
+        <br>
+        <br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" rows="4" cols="50">Que sea bonita</textarea>
+ 
+        <input type="button" value="Enviar" onclick="mostrarDatos()">
+    </form>
+    <div id="resultado"></div>
+   
+   
+    <script>
+       
+       function mostrarDatos() {
+       const nombre = document.getElementById('nombreCliente').value;
+       const material = document.getElementById('materialCaja').value;
+       const ganas = document.querySelector('input[name="ganas"]:checked').value;
+       const comentarios = document.getElementById('comentarios').value;
+       const resultado = ` La persona prefiere el  lenguaje de ${material} con ganas ${ganas}. ${comentarios}`;
+       document.getElementById('resultado').textContent = resultado;
+   }
+       
+   
+   
+
+// Crear un array para almacenar las flashcards
+const flashcards = [];
+
+// Función para añadir una nueva flashcard
+function agregarFlashcard(pregunta, respuesta) {
+    const nuevaFlashcard = { pregunta, respuesta };
+    flashcards.push(nuevaFlashcard);
+}
+
+// Función para eliminar todas las flashcards
+function eliminarTodasLasFlashcards() {
+    flashcards.length = 0;
+}
+
+// Función para voltear una flashcard
+function voltearFlashcard(indice) {
+    if (flashcards[indice]) {
+        flashcards[indice].respuesta = !flashcards[indice].respuesta;
+    }
+}
+
+// Ejemplo de uso
+agregarFlashcard("¿Cuál lenguaje te gusta mas ?", "Python");
+agregarFlashcard("¿En donde estudias programacion?", "campus");
+voltearFlashcard(0); // Voltear la primera flashcard
+
+// Mostrar todas las flashcards
+console.log("Flashcards:");
+for (let i = 0; i < flashcards.length; i++) {
+    const flashcard = flashcards[i];
+    console.log(`Pregunta: ${flashcard.pregunta}, Respuesta: ${flashcard.respuesta}`);
+}
+
+// Eliminar todas las flashcards
+eliminarTodasLasFlashcards();
+console.log("Flashcards después de eliminar todas:");
+console.log(flashcards);
+
+
+
+
+    </script>
+</body>
+</html>
