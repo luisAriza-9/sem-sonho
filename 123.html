@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teclas123</title>
+</head>
+<body>
+    <head>
+        <style>
+            .oculto {
+                display: none
+            }
+    
+    
+            .visible {
+                display: block
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        <div class="oculto" id="ficha1">
+            Hola, soy el bloque 1</div>
+        <div class="oculto" id="ficha2">
+            Hola, soy el bloque 2</div>|
+        <div class="oculto" id="ficha3">
+            Hola, soy el bloque 3</div>
+    
+    
+        <script>
+       document.addEventListener('keydown', function(event) {
+        const ficha1 = document.getElementById('ficha1');
+        const ficha2 = document.getElementById('ficha2');
+        const ficha3 = document.getElementById('ficha3');
+
+
+        ficha1.style.display = 'none';
+        ficha2.style.display = 'none';
+        ficha3.style.display = 'none';
+
+
+        if (event.key === '1') {
+            ficha1.style.display = 'block';
+        } else if (event.key === '2') {
+            ficha2.style.display = 'block';
+        } else if (event.key === '3') {
+            ficha3.style.display = 'block';
+        }
+    });
+
+       
+       </script>
+    </body>
+     
+</body>
+</html>
