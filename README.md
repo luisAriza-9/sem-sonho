@@ -2,3 +2,5 @@
 * crear ramas
 * cambiar ramas
 * gestionar rams
+* restaurar cambios
+* 
