@@ -3,4 +3,5 @@
 * cambiar ramas
 * gestionar rams
 * restaurar cambios
+* resolver conflictos
 * 
