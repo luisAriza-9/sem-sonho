@@ -1,0 +1,24 @@
+
+
+
+{
+"Clientes": [
+    {
+    "Nombre": "Luis Andres Ariza Osorio",
+   "Documentos":"1095948965",
+   "Email":"luchoteescucho@hotmail.com",
+   "Telefono":"3115197368",
+   "Compras":" que va comparar",
+   "Ciudad":"Bucaramanga",
+   "Direccion":"Cra33 # 64-69 piso 3 Monterredondo "
+    }
+],
+"Tipo de servicios": [
+    {
+        "Fibra Optica": "juan",
+        "documento": "11659876",
+        "edad": 
+    }
+    
+]
+}
