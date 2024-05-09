@@ -1,1 +1,0 @@
-fetch("http://localhos:3000/trainer/3",{ )
