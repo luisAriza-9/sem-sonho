@@ -2,23 +2,52 @@
 
 
 {
-"Clientes": [
-    {
-    "Nombre": "Luis Andres Ariza Osorio",
-   "Documentos":"1095948965",
-   "Email":"luchoteescucho@hotmail.com",
-   "Telefono":"3115197368",
-   "Compras":" que va comparar",
-   "Ciudad":"Bucaramanga",
-   "Direccion":"Cra33 # 64-69 piso 3 Monterredondo "
-    }
-],
-"Tipo de servicios": [
-    {
-        "Fibra Optica": "juan",
-        "documento": "11659876",
-        "edad": 
-    }
-    
-]
+    "clientes": [
+        {
+            "nombre": "Luis Andres Ariza Osorio",
+            "documento": 1095948965,
+            "email": "Luchoteescucho@hotmail.com",
+            "telefono": 3118652669,
+            "compras": null,
+            "ciudad": "Bucaramanga",
+            "direccion": "Cra32w # 64-69 piso 3 monterredondo",
+            "interacciones": {
+                "servicio cliente": null,
+                "reclamaciones": null,
+                "sugerencias": null
+            }
+        }
+    ],
+    "servicios": [
+        {
+            "nombre_serv": "fibra optica",
+            "serial": 12345678,
+            "categoria": "Hogar",
+            "descripcion": "se parte de la familia",
+            "precio": 120000
+        }
+    ],
+    "productos": [
+        {
+            "nombre": "",
+            "serial": 123456,
+            "marca": "",
+            "categoria": "Tecnologia",
+            "caracteristicas": [
+                "Memoria interna: 256 GB",
+                "RAM: 8 GB",
+                "Sistema operativo: Android 13"
+            ],
+            "precio": 999000,
+            "garantia": "1 a"
+        }
+    ],
+    "ventas": [
+        {
+            "vendido": "prepago",
+            "fecha": "17/12/23",
+            "cantidad": 2,
+            "estado": "pagado"
+        }
+    ]
 }

@@ -1,62 +1,33 @@
-class Venta:
-    def __init__(self, producto, cantidad, fecha):
-        self.producto = producto
-        self.cantidad = cantidad
-        self.fecha = fecha
+def menu_principal():
+    print("")
+    print("¡Bienvenido a Claro Colombia, la red que nos une!\n".center(60))
+    print("Por favor, ingresa tu tipo de usuario:\n1. Cliente\n2. Administrador\n3. Salir del sistema\n")
 
-# Registrar una venta
-venta1 = Venta(producto="Internet Fibra Óptica", cantidad=3, fecha="2024-05-09")
-lista_ventas = [venta1]
+def menu_cliente():
+    print("¡Bienvenido al Portal de Usuarios de Claro Colombia!\n".center(60))
+    print("A continuacion ingrese la opcion que quieres realizar:\n1. Llena encuesta Claro!\n2. Hecho especialmente para ti!\n3. Servicio al cliente\n4. Reclamaciones\n5. Sugerencias\n6. Salir\n")
 
-# Consultar ventas por producto o fecha
-def buscar_ventas(producto=None, fecha=None):
-    resultados = []
-    for venta in lista_ventas:
-        if (not producto or venta.producto == producto) and (not fecha or venta.fecha == fecha):
-            resultados.append(venta)
-    return resultados
+def opc():
+    try:
+        opc= int(input("Ingresa el numero de opcion correspondiente: "))
+        return opc
+    except Exception:
+        print ("Valor invalido")
+        return -1
+            #marca en txt
 
-# Ejemplo de uso
-ventas_hoy = buscar_ventas(fecha="2024-05-09")
-for venta in ventas_hoy:
-    print(f"Venta de {venta.cantidad} unidades de {venta.producto} el {venta.fecha}.")
+def menu_admin():
+    print("¡Bienvenido al Sistema de Gestion y Ventas de Claro Colombia!\n".center(60))
+    print("A continuacion ingresa la opcion con la que vas a trabajar:\n1. Usuarios\n2. Productos y Servicios\n3. Reportes\n4. Ventas\n5. Salir")
 
+def admin_usuarios():
+    print("¿Que quieres hacer?\n1. Registrar nuevo cliente\n2. Actualizar cliente\n3. Eliminar cliente\n4. Listar clientes\n5. Categoria de Clientes Claro\n6. Servicios activos Clientes Claro\n7. Historial interacciones de Clientes Claro\n8. Salir")
 
+def productos_servicios():
+    print("¿Que quieres hacer?\n1. Servicios\n2. Productos\n3.Salir")
 
-class Servicio:
-    def __init__(self, nombre, tipo, precio):
-        self.nombre = nombre
-        self.tipo = tipo
-        self.precio = precio
+def reportes(): 
+    print("¿Que quieres hacer?\n1. Productos y servicios populares de claro\n2. Informe de productos y servicios Claro\n3. Informe producto comprado clientes y cantidad\n4. Salir")
 
-# Crear un servicio
-servicio1 = Servicio(nombre="Internet Fibra Óptica", tipo="Internet", precio=50)
-
-# Agregar más servicios a una lista
-lista_servicios = [servicio1]
-
-# Consultar un servicio por nombre
-def buscar_servicio(nombre):
-    for servicio in lista_servicios:
-        if servicio.nombre == nombre:
-            return servicio
-    return None
-
-# Modificar un servicio existente
-def modificar_servicio(nombre, nuevo_precio):
-    servicio = buscar_servicio(nombre)
-    if servicio:
-        servicio.precio = nuevo_precio
-        print(f"El precio del servicio {nombre} se ha actualizado a {nuevo_precio}.")
-
-# Eliminar un servicio
-def eliminar_servicio(nombre):
-    servicio = buscar_servicio(nombre)
-    if servicio:
-        lista_servicios.remove(servicio)
-        print(f"El servicio {nombre} ha sido eliminado.")
-
-# Ejemplo de uso
-modificar_servicio("Internet Fibra Óptica", 55)
-eliminar_servicio("Servicio X")
-
+def ventas():
+    print("¿Que quieres hacer?\n1. Acceder a catalogo de venta\n2. Registro venta\n3. Informe venta\n4. Salir")

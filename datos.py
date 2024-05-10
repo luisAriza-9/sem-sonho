@@ -1,17 +1,15 @@
 import json
 
-def cargar_datos(archivo):
-    datos = {}
-    with open(archivo,"r") as file:
-        datos=json.load(file)
+def cargar(archivo):
+    datos={}
+    with open (archivo,"r") as entrada:
+        datos= json.load(entrada)
     return datos
-        
-        
 
-def guardar_datos(datos, archivo):
-    datos = dict(datos)
-    
-    diccionario=json.dumps(datos, indent=4)
-    file=open(archivo,"w")
-    file.write(diccionario)
-    file.close()
+def guardar(datos,archivo):
+    datos= dict(datos)
+
+    diccionario_actualizado= json.dumps(datos, indent=4)
+    salida= open(archivo,"w")
+    salida.write(diccionario_actualizado)
+    salida.close()
