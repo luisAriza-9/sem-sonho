@@ -1,7 +1,7 @@
-from menus import*
-from manejo_json import*
+from menu import*
+from datos import*
 
-datos= cargar("Innovanet.json")
+datos= cargar("base_datos.json")
 #menu principal
 while True:
     menu_principal()
@@ -35,7 +35,7 @@ while True:
     elif opcion==2:
             while True:
                 print("")
-                menu_admin()
+                menu_administrativo()
                 opcion= opc()
                 while opcion not in [1,2,3,4,5]:
                     opcion =opc()
@@ -81,7 +81,7 @@ while True:
 #reportes
                 elif opcion== 3:
                     print("")
-                    reportes()
+                    reportes_fallas()
                     opcion= opc()
                     while opcion not in [1,2,3,4]:
                         opcion =opc()
@@ -121,4 +121,4 @@ while True:
 
 
 
-datos= guardar(datos,"Innovanet.json")
+datos= guardar(datos,"base_datos")
