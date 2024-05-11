@@ -3,12 +3,16 @@ def menu_principal():
     
     
     print("🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜")
-    print("")
-    print("🔴Bienvenido a  Mi Claro Colombia, la red que nos une a todos🔴\n".center(100))
-    print("")
+    print("🟥                                                                                                            ⬜")           
+    print("")                                                                                             
+    print("               🔴𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗢 𝗔 𝗠𝗜 𝗖𝗟𝗔𝗥𝗢 𝗖𝗢𝗟𝗢𝗠𝗕𝗜𝗔, 𝗟𝗔 𝗥𝗘𝗗 𝗤𝗨𝗘 𝗡𝗢𝗦 𝗨𝗡𝗘 𝗔 𝗧𝗢𝗗𝗢𝗦🔴 \n".center(100))
+    print("🟥                                                                                                            ⬜")
     print("🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜🟥⬜")
-    print("")
+    print("  ")
     print("Por favor, ingresa tu tipo de usuario:\n1. Cliente\n2. Administrativo\n3. Salir del menu\n")
+
+
+
 
 def menu_cliente():
     print("⭕Bienvenido al Bot de Usuarios de Mi Claro Colombia⭕\n".center(100))
@@ -41,3 +45,6 @@ def ventas():
 
 def productos():
     print ("¿Deseas algun producto?\n1. Acceder a catalogo de venta\n2. Registro venta\n3. Informe venta\n4. Salir")
+    
+    
+    print("******************************************************************************************************************")
