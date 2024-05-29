@@ -1,0 +1,238 @@
+{
+    "clientes": [
+        {
+            "nombre": "lucho ",
+            "codigo": "1a",
+            "email": "luchote escucho@gmail.com",
+            "telefono": "3102040809",
+            "ciudad": "Bucaramanga",
+            "direccion": "calle 33 no. 14-20",
+            "compras": 4,
+            "adquiridos": [
+                "Prepago",
+                "Portatil Lenovo 15ALC6 R5 8GB 128GB +1TB W11 Azul"
+            ],
+            "publicidad": [
+                [
+                    "computadores",
+                    "celulares"
+                ]
+            ],
+            "servicio_al_cliente": [
+                "Como soluciono un decodificador da\u00f1ado",
+                "Necesito otro celular nuevo por la garantia"
+            ],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "Juan",
+            "codigo": "2a",
+            "email": "juanito@gmail.com",
+            "telefono": "3456754120",
+            "ciudad": "barranquilla",
+            "direccion": "calle 9 cra 36",
+            "compras": 1,
+            "adquiridos": [
+                "Portatil Lenovo 15ALC6 R5 8GB 128GB +1TB W11 Azul"
+            ],
+            "publicidad": [
+                [
+                    "hogar"
+                ]
+            ],
+            "servicio_al_cliente": [],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "Miguel",
+            "codigo": "3a",
+            "email": "miguelito200@gmail.com",
+            "telefono": "3390181749",
+            "ciudad": "cauca",
+            "direccion": "occidente 3 cra 12",
+            "compras": 20,
+            "adquiridos": [],
+            "servicio_al_cliente": [],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "Vanessa",
+            "codigo": "4a",
+            "email": "vanessitalinda@hotmail.com",
+            "telefono": "3457160978",
+            "ciudad": "amazonas",
+            "direccion": "calle 18 cra 5-10",
+            "compras": 16,
+            "adquiridos": [],
+            "publicidad": [],
+            "servicio_al_cliente": [],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "Jose",
+            "codigo": "5a",
+            "email": "josesote@hotmail.com",
+            "telefono": "3458829010",
+            "ciudad": "cartagena",
+            "direccion": "calle 10 #12-15",
+            "compras": 6,
+            "adquiridos": [
+                "Telefonia fija Cantidad: 2"
+            ],
+            "publicidad": [],
+            "servicio_al_cliente": [],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "maria",
+            "codigo": "6a",
+            "email": "marimari@hotmail.com",
+            "telefono": "3102060890",
+            "ciudad": "santa marta",
+            "direccion": "calle 18 #3-5",
+            "compras": 3,
+            "adquiridos": [],
+            "publicidad": [],
+            "servicio_al_cliente": [],
+            "reclamaciones": [],
+            "sugerencias": []
+        },
+        {
+            "nombre": "Laura",
+            "codigo": "8a",
+            "email": "lauritaBv@gmail.com",
+            "telefono": 3168278492,
+            "ciudad": "Bucarayork",
+            "direccion": "Calle 12 #97-100A",
+            "compras": 0,
+            "adquiridos": [],
+            "publicidad": [],
+            "servicio_al_cliente": []
+        }
+    ],
+    "servicios": [
+        {
+            "nombre_serv": "Fibra optica",
+            "codigo": "9a",
+            "categoria": "hogar",
+            "descripcion": "Descubre el futuro de la conectividad con Claro Fibra optica! Sumergete en un universo de velocidad, fiabilidad y tecnologia de vanguardia. Conecta todos tus dispositivos a una red ultrarrapida que te llevara a nuevas alturas de streaming sin interrupciones, juegos en linea sin retardos y descargas instantaneas. Di adios a los tiempos de espera y da la bienvenida a la era de la velocidad con Claro Fibra optica!",
+            "precio": "20000",
+            "cantidad_vendida": 4
+        },
+        {
+            "nombre_serv": "Prepago",
+            "codigo": "10a",
+            "categoria": "celulares",
+            "descripcion": "Claro te ofrece un servicio prepago que te brinda total flexibilidad y control sobre tus gastos de comunicacion. Con este servicio, puedes recargar tu saldo segun tus necesidades y utilizarlo para realizar llamadas, enviar mensajes de texto y navegar por Internet. No necesitas comprometerte con contratos a largo plazo ni pasar por verificaciones de credito. Con solo recargar, tienes acceso a todos los servicios de Claro de inmediato.",
+            "precio": "Desde 10000",
+            "cantidad_vendida": 4
+        },
+        {
+            "nombre_serv": "Postpago",
+            "codigo": "11a",
+            "categoria": "celulares",
+            "descripcion": "Claro te ofrece un servicio prepago simple y flexible. Recargas tu saldo y controlas tus gastos. Sin contratos largos ni verificaciones. Administra todo desde tu celular con nuestra app. Recargas, hablas y navegas a tu manera!",
+            "precio": "Desde 39000",
+            "cantidad_vendida": 0
+        },
+        {
+            "nombre_serv": "Netflix",
+            "codigo": "12a",
+            "categoria": "streaming",
+            "descripcion": "Claro te brinda acceso a Netflix, una plataforma lider en entretenimiento con una extensa biblioteca de peliculas, series y documentales. Disfruta de contenido exclusivo y populares producciones internacionales desde cualquier dispositivo con conexion a internet.",
+            "precio": "45500/mes",
+            "cantidad_vendida": 30
+        },
+        {
+            "nombre_serv": "Telefonia fija",
+            "codigo": "13a",
+            "categoria": "hogar",
+            "descripcion": "Claro proporciona servicios de telefonia fija confiables y accesibles, ideales para mantener una comunicacion clara y estable en el hogar o la oficina. Con una amplia cobertura y opciones de planes personalizables, Claro te ofrece la tranquilidad de contar con un servicio de telefonia fija de calidad para tus necesidades de comunicacion.",
+            "precio": "50000",
+            "cantidad_vendida": 30
+        }
+    ],
+    "productos": [
+        {
+            "nombre": "Xiaomi Redmi Note 13 Pro",
+            "codigo": "14a",
+            "marca": "Xiaomi",
+            "categoria": "celulares",
+            "caracteristicas": "Memoria interna: 256 GB, RAM: 8 GB,Sistema operativo: Android 13",
+            "precio": "999000",
+            "garantia": "1 a",
+            "cantidad_vendida": 3
+        },
+        {
+            "nombre": "Portatil Lenovo 15ALC6 R5 8GB 128GB +1TB W11 Azul",
+            "codigo": "15a",
+            "categoria": "computadores",
+            "marca": "lenovo",
+            "caracteristicas": "Portatil Lenovo IP 3 15ALC6 AMD Ryzen 5 5500U 156 Pulgadas FHD Memoria 8GB Estado Solido 128GB + 1TB Windows 11 Color Azul",
+            "garantia": "9 meses",
+            "precio": "1900999",
+            "cantidad_vendida": 8
+        },
+        {
+            "nombre": "Power Bank ZERMATT NW5125 BLANCO",
+            "codigo": "16a",
+            "categoria": "accesorios tecnologicos",
+            "marca": "Electro Online",
+            "caracteristicas": "Bater\u00eda para dispositivo m\u00f3vil con display indicador de carga. Capacidad: 5000 mAh. Tama\u00f1o: 63 X 90 X 13 mm. Interfaz de entrada: Micro USB Tipo de bater\u00eda: Bater\u00eda de pol\u00edmero de litio Entrada: DC5.0V / 2.0A Salidas de Carga: 2 puertos USB Salidas: DC5.0V / 2.1A Certificaci\u00f3n de Calidad: FCC, CE, RoHS",
+            "garantia": "6 meses",
+            "precio": "40900",
+            "cantidad_vendida": 0
+        }
+    ],
+    "ventas": [
+        {
+            "codigo": "6eeb22bb-327f-4087-b45d-aa99b31b83e1",
+            "nombre": "Portatil Lenovo 15ALC6 R5 8GB 128GB +1TB W11 Azul",
+            "fecha": "2024-05-13 20:44:27.558037",
+            "cantidad": "2",
+            "estado": "deuda"
+        },
+        {
+            "codigo": "c46c31c8-03bc-42ab-ac44-4c8a29e3bdf8",
+            "nombre": "Power Bank ZERMATT NW5125 BLANCO",
+            "fecha": "2024-05-13 20:47:30.378285",
+            "cantidad": "4",
+            "estado": "pagado"
+        },
+        {
+            "codigo": "35a653ea-1228-4cfc-afac-283b23e0312e",
+            "nombre": "Fibra optica",
+            "fecha": "2024-05-13 20:53:04.586056",
+            "cantidad": 4,
+            "estado": "pagado"
+        },
+        {
+            "codigo": "pip081",
+            "nombre": "Prepago",
+            "fecha": "2024-05-13 20:54:19.883692",
+            "cantidad": 4,
+            "estado": "deuda"
+        },
+        {
+            "codigo": "6eeb22bb-327f-4087-b45d-aa99b31b83e1",
+            "nombre": "Portatil Lenovo 15ALC6 R5 8GB 128GB +1TB W11 Azul",
+            "fecha": "2024-05-13 21:03:40.434567",
+            "cantidad": 8,
+            "estado": "pagado"
+        }
+    ],
+    "categorias": [
+        "hogar",
+        "celulares",
+        "servicios moviles",
+        "computadores",
+        "streaming",
+        "accesorios tecnologicos",
+        "seguridad digital"
+    ]
+}
