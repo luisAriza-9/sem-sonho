@@ -10,7 +10,7 @@ def codigo_unico():
 def registrar_clientes(datos):
     datos= dict(datos)
     cliente ={}
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     cliente["nombre"]= input("Ingresa el nombre del cliente: ")
     cliente["codigo"]= codigo_unico()
     print("El codigo unico del cliente es "+cliente["codigo"])
@@ -40,7 +40,7 @@ def registrar_clientes(datos):
 
 def actualizar_clientes(datos):
     datos= dict(datos)
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     usuario= input("Ingresa el codigo del cliente a cambiar: ")
     encontrado= False
     for cliente in datos["clientes"]:
@@ -89,7 +89,7 @@ def actualizar_clientes(datos):
 
 def eliminar_usuario(datos):
     datos= dict(datos)
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     usuario= input("Ingresa el codigo del cliente a eliminar: ")
     encontrado= False
     for i in range (len(datos["clientes"])):
@@ -105,7 +105,7 @@ def eliminar_usuario(datos):
 def listar_usuarios(datos):
     datos= dict(datos)
     indice= 1
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("Lista de clientes\n")
     for cliente in datos["clientes"]:
         print(str(indice)+"."+" Nombre: " + cliente["nombre"]+ " - "+ "Codigo: "+ cliente["codigo"])
