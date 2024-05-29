@@ -1,15 +1,15 @@
 from datetime import datetime
 
 def menu_principal():
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("¡Bienvenido a Claro Colombia, la red que nos une!\n".center(100))
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("Por favor, ingresa tu tipo de usuario:\n1. Cliente\n2. Administrador\n3. Salir del sistema\n")
 
 def menu_cliente():
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("¡Bienvenido al Portal de Usuarios de Claro Colombia!\n".center(100))
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("A continuacion ingrese la opcion que quieres realizar:\n1. Llena encuesta Claro!\n2. Hecho especialmente para ti!\n3. Adquiere los productos claro!\n4. Servicio al cliente\n5. Reclamaciones\n6. Sugerencias\n7. Salir\n")
 
 def opc():
@@ -24,9 +24,9 @@ def opc():
             #marca en txt
 
 def menu_admin():
-    print("-------------------------------------------------------------------------")
-    print("¡Bienvenido al Sistema de Gestion y Ventas de Claro Colombia!\n".center(80))
-    print("-------------------------------------------------------------------------")
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
+    print("¡Bienvenido al Sistema de Gestion y Ventas de Claro Colombia!\n".center(100))
+    print("🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪🟥⚪")
     print("A continuacion ingresa la opcion con la que vas a trabajar:\n1. Usuarios\n2. Productos y Servicios\n3. Reportes\n4. Ventas\n5. Salir")
 
 def admin_usuarios():
