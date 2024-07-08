@@ -10,8 +10,8 @@ Esta de una decripción
 | 4 | Sección 4 |
 | 5 | Sección 5 |
 
-### Instalaciones 
-Deberas ejecutar este comando para descargar 
+###Consejos 
+modificar las carpetas
 
 ```bash
 sudo apt install app
